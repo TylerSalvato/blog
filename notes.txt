@@ -1,0 +1,63 @@
+# Mini Challenge 1
+
+## Initialize your blog
+
+### Acceptance Criteria
+1. Create a new django project within this directory (`blog`)
+2. Create the following apps:
+2.1. pages
+2.2. posts
+2.3. accounts
+3. Create a `templates` directory
+4. Create a `static` directory, and within `static`:
+4.1. css
+4.2. js
+4.4. img
+5. Install `pages` and `posts`
+6. Run all default migrations
+7. Create an admin (or super user)
+8. Run your project and make sure you see the rocket ship template
+
+## Note
+Your project directory should look like this:
+```
+blog
+- manage.py
+- venv
+-- ...
+- config
+-- urls.py
+-- settings.py
+-- asgi.py
+-- wsgi.py
+-- __init__.py
+```
+
+pzqM7483
+
+  489  cd ~/Code/SDGKU
+  490  mkdir mb
+  491  cd mb
+  492  python3 -m venv venv
+  493  source venv/bin/activate
+  494  pip3 install django
+  495  django-admin startproject config .
+  496  ls
+  497  python3 manage.py startapp pages
+  498  python3 manage.py startapp posts
+  499  ls
+  500  code .
+  501  python3 manage.py makemigrations
+  502  python3 manage.py migrate
+  503  python3 manage.py createsuperuser
+  504  python3 manage.py runserver
+  
+
+  mkdir templates 
+  mkdir static
+
+  mkdir static/css
+  mkdir static/js
+  mkdir static/img
+
+  
