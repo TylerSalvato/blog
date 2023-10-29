@@ -40,11 +40,17 @@
                         <a class="nav-link" href="{%url 'archived' %}">Archived</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{%url 'password_change' %}">Change Password</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{%url 'logout' %}">Log Out</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{%url 'login' %}">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{%url 'password_reset' %}">Reset Password</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{%url 'signup' %}">Sign Up</a>
